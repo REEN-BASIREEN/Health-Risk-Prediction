@@ -10,8 +10,8 @@ scaler = load('scaler.pkl')  # Scaler filename
 model = load('best_model.pkl')  # Model filename
 
 # URL for fetching data from ThingSpeak
-THINGSPEAK_CHANNEL_ID = '2802771'
-THINGSPEAK_API_KEY = 'BVPSP1KOVBKQWW5K'
+THINGSPEAK_CHANNEL_ID = '******'
+THINGSPEAK_API_KEY = '******'
 THINGSPEAK_URL = f"https://api.thingspeak.com/channels/{THINGSPEAK_CHANNEL_ID}/feeds.json?api_key={THINGSPEAK_API_KEY}"
 
 # Function to convert UTC time to local time
@@ -129,3 +129,4 @@ else:
 # Auto refresh every 5 seconds
 time.sleep(5)
 st.rerun()
+
